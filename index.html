@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTV Downloader - YouTube Video Downloader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0F0F0F 0%, #1a1a2e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #F1F1F1;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #FF0000;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .features {
+            display: grid;
+            gap: 20px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .feature-text h3 {
+            font-size: 1rem;
+            margin-bottom: 3px;
+        }
+
+        .feature-text p {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #FF0000;
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background: #CC0000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+        }
+
+        .platform-note {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .requirements {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .requirements h4 {
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">&#9654;</div>
+        <h1>YTV Downloader</h1>
+        <p class="tagline">Simple YouTube Video Downloader for Windows</p>
+
+        <div class="card">
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">&#128194;</span>
+                    <div class="feature-text">
+                        <h3>Easy to Use</h3>
+                        <p>Just paste your video link and choose a folder</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">&#127912;</span>
+                    <div class="feature-text">
+                        <h3>Light &amp; Dark Mode</h3>
+                        <p>Switch between themes for comfortable viewing</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">&#9889;</span>
+                    <div class="feature-text">
+                        <h3>Fast Downloads</h3>
+                        <p>Powered by yt-dlp for reliable video downloads</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="dist/YT_video download.exe" class="download-btn" download>
+                Download for Windows
+            </a>
+            <p class="platform-note">Windows 10/11 compatible</p>
+        </div>
+
+        <div class="requirements">
+            <h4>How to Use</h4>
+            <p>1. Download and run the application<br>
+               2. Paste your YouTube video URL<br>
+               3. Select a folder to save the video<br>
+               4. Click "Download Video"</p>
+        </div>
+
+        <footer>
+            <p>YTV Downloader - A simple desktop application</p>
+        </footer>
+    </div>
+</body>
+</html>
